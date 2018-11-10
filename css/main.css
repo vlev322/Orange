@@ -1,0 +1,413 @@
+@font-face {
+	font-family: 'Brandon Grotesque Regular Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Regular Italic'), url('../fonts/brandon-grotesque-regular-italic-58a8a456c4724.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Brandon Grotesque Thin Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Thin Italic'), url('../fonts/brandon-grotesque-thin-italic-58a8a3a8861fe.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Brandon Grotesque Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Light'), url('../fonts/brandon-grotesque-light-58a8a4b38001d.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Brandon Grotesque Light Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Light Italic'), url('../fonts/brandon-grotesque-light-italic-58a8a4ccb88be.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Brandon Grotesque Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Medium Italic'), url('../fonts/brandon-grotesque-medium-italic-58a8a3c40866a.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Brandon Grotesque Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Bold Italic'), url('../fonts/brandon-grotesque-bold-italic-58a8a48221563.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Brandon Grotesque Black';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Brandon Grotesque Black'), url('../fonts/brandon-grotesque-black-58a8a3e824392.woff') format('woff');
+}
+html,
+body {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.75;
+	font-family: 'CRC', sans-serif;
+	opacity: 1;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+
+.site-header {
+	min-height: 700px;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+	position: absolute;
+	z-index: -1;
+}
+
+#slider,
+.slide {
+	height: 100vh;
+	width: auto;
+}
+
+.headWelcVrap {
+	height: 100%;
+}
+
+.header-composition {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	align-items: center;
+	height: 100%;
+}
+
+.welcome {
+	position: relative;
+}
+
+.welcome img {
+	position: absolute;
+	z-index: -1;
+	top: -40px;
+	left: -98px;
+}
+
+.welcome p {
+	font-size: 32px;
+	font-weight: 650;
+	margin-bottom: 20px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'Brandon Grotesque Light',
+	sans-serif;
+
+}
+
+.welcome h1 {
+	font-size: 60px;
+	text-transform: uppercase;
+	font-family: 'Brandon Grotesque Black',	sans-serif;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.btn-more{
+	height: 65px;
+	width: 240px;
+	border: none;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 5px;	
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+}
+/* Effect 10: reveal, push out */
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+nav a,
+nav button{
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav button:hover,
+nav a:focus, 
+nav button:focus, {
+	outline: none;
+}
+
+.cl-effect-10 {
+	position: relative;
+}
+
+.cl-effect-10 a,
+.cl-effect-10 button {
+	overflow: hidden;
+	margin: 0 15px;
+}
+
+.cl-effect-10 a span,
+.cl-effect-10 button span {
+	display: block;
+	padding: 10px 20px;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-10 a::before,
+.cl-effect-10 button::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 15px 20px;
+	width: 100%;
+	height: 100%;
+	background: rgba(54, 71, 90, 0.6);
+	color: #fff;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(-100%);
+}
+
+.cl-effect-10 a:hover span,
+.cl-effect-10 button:hover span,
+.cl-effect-10 a:focus span,
+.cl-effect-10 button:focus span {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.cl-effect-10 button:hover::before,
+.cl-effect-10 a:hover::before,
+.cl-effect-10 button:focus::before,
+.cl-effect-10 a:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
+.btn{
+	text-align: center;
+	padding-top: 100px;
+}
+/* End btn effect*/
+.secondScr, .thirdScr{
+	z-index: 2;
+}
+.secondScr {
+	background: #000;
+	position: relative;
+}
+.sectio-title h2,
+.footer-content h2 {
+	font-size: 60px;
+	display: inline-block;
+	margin: 0;
+}
+.sectio-title h2:first-child,
+.footer-content h2 :first-child {
+		font-family: 'Brandon Grotesque Light',	sans-serif;
+}
+.sectio-title h2:first-child,
+.footer-content h2:nth-child(2) {
+		font-family: 'Brandon Grotesque Black',	sans-serif;
+}
+.sectio-title p,
+.footer-content p{
+	font-size: 22px;
+	font-family: 'Brandon Grotesque Light',	sans-serif;
+	color: #777777;
+	margin: 0;
+}
+.fp-tableCell {
+	display: inherit;
+	text-align: center;
+	padding-top: 100px;
+}
+.thirdScr {
+	background: #7690C5;
+	position: relative;
+}
+.sectio-content{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+.sectio-content-text {
+	font-family: 'Brandon Grotesque Light',
+	sans-serif;
+	width: 40%;
+	text-align: center;
+	margin: 30px auto;
+	font-size: 18px;
+}
+.worker{
+	margin: 0 30px;
+}
+.img{
+	width: 240px;
+	height: 240px;
+	border: 5px solid #fff;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-ms-border-radius: 150px;
+	-o-border-radius: 150px;
+	margin-bottom: 20px;
+}
+.worker h3{
+		font-family: 'Brandon Grotesque Black',
+		sans-serif;
+}
+.worker span{
+		font-family: 'Brandon Grotesque Light',
+		sans-serif;
+		color: #777777;
+}
+.soc i{
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid #fff;
+	cursor: pointer;
+	border-radius: 105px;
+	-webkit-border-radius: 105px;
+	-moz-border-radius: 105px;
+	-ms-border-radius: 105px;
+	-o-border-radius: 105px;
+	font-size: 20px;
+	transition: background-color, transform .25s ease;
+	-webkit-transition: background-color, transform .25s ease;
+	-moz-transition: background-color, transform .25s ease;
+	-ms-transition: background-color, transform .25s ease;
+	-o-transition: background-color, transform .25s ease;
+}
+.soc i.fa-facebook-f,
+.soc i.fa-pinterest-p {
+	padding: 5px 9px;
+}
+.soc i:hover{
+	background-color: #4D4D4D;
+	-webkit-transform: scale(0.7, 0.9) ;
+	transform: scale(0.7, 0.9) ;
+	-moz-transform: scale(0.7, 0.9) ;
+	-ms-transform: scale(0.7, 0.9) ;
+	-o-transform: scale(0.7, 0.9) ;
+}
+.footer{
+	display: flex;
+	color: #ffffff;
+	justify-content: center;
+}
+.footer-content{
+	text-align: left;
+}
+.footer-content p{
+	color: #ffffff;
+	text-align: left;
+}
+table{
+	text-align: left;
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Brandon Grotesque Light',sans-serif;
+	font-size: 18px;
+	margin-top: 40px;
+}
+table i{
+	margin-right: 15px;
+	font-size: 24px;
+}
+tr{
+	height: 65px;
+}
+.footer-form{
+	text-align: left;
+	margin-left: 100px;
+	width: 23%;
+}
+.footer-form input, .footer-form textarea{
+	display: block;
+	width: 100%;
+	border: 1px solid #000;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin-bottom: 20px;
+	padding-left: 20px;	
+	font-size: 16px;
+	color: #777777;
+}
+.footer-form input{
+	height: 50px;
+}
+.footer-form textarea {
+	padding-top: 20px;
+	font-size: 18px;
+}
+.basement{
+	text-align: center;
+	border-top: 1px solid hsla(0, 0%, 100%, 0.842);
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	right: 10%;
+}
+.basement i{
+	margin-right: 8px;
+	font-size: 14px;
+}

@@ -1,0 +1,55 @@
+@media only screen and (max-width : 1200px) {
+
+}
+
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 840px) {
+	.sectio-content {
+		display: block;
+	}
+	.img{
+		margin: 5px auto;
+		width: 190px;
+		height: 190px;		
+	}
+	.sectio-content{
+		margin: 0;
+	}
+	.worker:last-child{
+		display: none;
+	}
+	.sectio-content-text{
+		width: 98%;
+		margin: 0;
+	}
+	.footer{
+		display: block;
+		padding: 10px 15px;
+	}
+	.footer-form{
+		width: 75%;
+		margin-left: 20px;
+		margin: 0 auto;
+	}
+	textarea{
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+
+}
+
+@media only screen and (max-width : 320px) {
+
+
+}
